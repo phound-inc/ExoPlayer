@@ -636,7 +636,7 @@ public final class MediaSessionConnector {
       case Player.STATE_READY:
         return playWhenReady ? PlaybackStateCompat.STATE_PLAYING : PlaybackStateCompat.STATE_PAUSED;
       case Player.STATE_ENDED:
-        return PlaybackStateCompat.STATE_PAUSED;
+        return PlaybackStateCompat.STATE_STOPPED;
       default:
         return PlaybackStateCompat.STATE_NONE;
     }
